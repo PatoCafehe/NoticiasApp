@@ -2,6 +2,7 @@ import { useState, useEffect, createContext } from 'react';
 import axios from 'axios';
 
 const NoticiasContext = createContext();
+console.log(import.meta.env.VITE_API_KEY);
 
 const NoticiasProvider = ({ children }) => {
 	const [categoria, setCategoria] = useState('general');
